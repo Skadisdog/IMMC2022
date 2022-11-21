@@ -6,6 +6,7 @@ string a;
 int n,i;
 int number;
 int main(){
+	system("del /F /S /Q answer.txt");
 	freopen("number","r",stdin);
 	cin>>number;
 	fclose(stdin);
@@ -54,5 +55,7 @@ int main(){
 	system("cd .\\out\\ && max_and_min.exe");
 	system("cd .\\planc && del /F /S /Q yu");
 	system("cd .\\yu && del /F /S /Q yu && del /F /S /Q random.out");
+	system("cd .\\out && copy max_and_min.txt ..\\");
+	system("ren max_and_min.txt answer.txt");
 	return 0;
 }
