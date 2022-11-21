@@ -6,16 +6,16 @@ string a;
 int n,i;
 int number;
 int main(){
+	system("cd .\\yu && mkdir yu");
+	system("cd .\\yu && yu.exe");
 	system("del /F /S /Q answer.txt");
+	system("del .\\out\\max_and_min.txt");
+	system("fsutil file createnew .\\out\\max_and_min.txt 0");
 	freopen("number","r",stdin);
 	cin>>number;
 	fclose(stdin);
 	cin.clear();
 	number=number*(number-1)/2;
-	system("cd .\\yu && mkdir yu");
-	system("cd .\\yu && yu.exe");
-	system("del .\\out\\max_and_min.txt");
-	system("fsutil file createnew .\\out\\max_and_min.txt 0");
 	for(i=1;i<=number;i++){
 		char zhiling[1000];
 		sprintf(zhiling,"copy .\\yu\\yu\\%d.txt .\\",i);
@@ -40,7 +40,7 @@ int main(){
 		system("del plan.in");
 	}
 	system("cd .\\out\\ && max_and_min.exe");
-	system("cd .\\planc && yu.exe");
+	system("cd .\\planc && yu.exe && map.exe");
 	for(i=1;i<=number;i++){
 		char zhiling[1000];
 		sprintf(zhiling,"copy .\\planc\\yu\\%d.txt .\\",i);
