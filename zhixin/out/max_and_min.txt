@@ -1,3 +1,6 @@
 Max:1.2294,Min:1.1595
 Max:1.22739,Min:1.15962
 Max:1.21503,Min:1.15645
+Max:0,Min:0
+Max:0,Min:0
+Max:0,Min:0
