@@ -22,5 +22,5 @@ int main(){
 		sprintf(zhiling,"del %d.in",i);
 		system(zhiling);
 	}
-	cout<<"Max:"<<maxn<<",Min:"<<minn<<endl;
+	cout<<"Min:"<<minn<<" , Max:"<<maxn<<endl;
 }
